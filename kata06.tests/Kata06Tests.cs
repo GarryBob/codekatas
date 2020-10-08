@@ -12,7 +12,7 @@ namespace codekatas.kata06
         [Fact]
         public void ProcessingWordListForAnagrams_Finds20683()
         {
-            int count = File.ReadAllLines(@"c:\Users\Etienne\projects\codekatas\wordlist.txt")
+            int count = File.ReadAllLines(@"C:\Users\Etienne\Documents\GitHub\codekatas\wordlist.txt")
                 .GroupBy(w => String.Concat(w.OrderBy(c => c)))
                 .Where(g => g.Count() > 1)
                 // .ToList().ForEach(g => Console.WriteLine(String.Join(" ", g)));

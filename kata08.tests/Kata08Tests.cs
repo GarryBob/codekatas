@@ -9,7 +9,7 @@ namespace codekatas.kata08.tests
         [Fact]
         public void Test1()
         {
-            var finder = new FixedSizeAnagramFinder(@"c:\Users\Etienne\projects\codekatas\wordlist.txt", 6);
+            var finder = new FixedSizeAnagramFinder(@"C:\Users\Etienne\Documents\GitHub\codekatas\wordlist.txt", 6);
             
             foreach (string w in finder.Find())
             {
